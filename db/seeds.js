@@ -58,3 +58,10 @@ const ut = new Games({
     rating: 4,
 })
 
+const rr = new Games({
+    name: "Robo Recall",
+    genre: "first person shooter",
+    rating: 6,
+})
+
+
