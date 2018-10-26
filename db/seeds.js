@@ -34,3 +34,9 @@ const counterS = new Games({
     rating: 7,
 })
 
+const csgo = new Games({
+    name: "Counter Stick Global Offence",
+    genre: "first person shooter",
+    rating: 8,
+})
+
