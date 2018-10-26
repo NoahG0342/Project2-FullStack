@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/NoahG0342/Project2-FullStack/issues"
   },
-  "homepage": "https://github.com/NoahG0342/Project2-FullStack#readme"
+  "homepage": "https://github.com/NoahG0342/Project2-FullStack#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7"
+  }
 }
