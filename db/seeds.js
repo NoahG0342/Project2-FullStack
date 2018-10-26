@@ -52,3 +52,9 @@ const fn = new Games({
     rating: 8,
 })
 
+const ut = new Games({
+    name: "Unreal Tournament",
+    genre: "first person shooter",
+    rating: 4,
+})
+
