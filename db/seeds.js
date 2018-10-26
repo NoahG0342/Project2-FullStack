@@ -40,3 +40,9 @@ const csgo = new Games({
     rating: 8,
 })
 
+const tf = new Games({
+    name: "Team Fortress",
+    genre: "first person shooter",
+    rating: 6,
+})
+
