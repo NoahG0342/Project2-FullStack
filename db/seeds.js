@@ -28,3 +28,9 @@ const bo4 = new Games({
     rating: 9,
 })
 
+const counterS = new Games({
+    name: "Counter Strick Source",
+    genre: "first person shooter",
+    rating: 7,
+})
+
