@@ -1,3 +1,4 @@
+const mongoose = require('../db/connections')
 const Schema = mongoose.Schema
 
 const Platform = new Schema({
