@@ -85,3 +85,11 @@ const epic = new Platform({
     Games: [fn, ut, rr]
 })
 
+Platform.remove({})
+    .then(() => Games.insertMany([overWatch, wow, bo4, counterS, csgo, tf, fn, ut, rr]))
+    .then(() => steam.save())
+    .then(() => battleNet.save())
+    .then(() => epic.save())
+    .then(() => billy.save())
+    .then(() => console.log("Database seeded success"))
+    .then(() => mongoose.connection.close())
