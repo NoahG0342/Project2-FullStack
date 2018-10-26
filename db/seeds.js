@@ -15,3 +15,10 @@ const overWatch = new Games({
     rating: 8,
 })
 
+const wow = new Games({
+    name: "World Of Warcraft",
+    genre: "MMORPG",
+    rating: 7,
+
+})
+
