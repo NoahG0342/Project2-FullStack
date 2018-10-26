@@ -9,3 +9,9 @@ const billy = new User({
     password: "billy"
 })
 
+const overWatch = new Games({
+    name: "Overwatch",
+    genre: "first person shooter",
+    rating: 8,
+})
+
