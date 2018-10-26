@@ -46,3 +46,9 @@ const tf = new Games({
     rating: 6,
 })
 
+const fn = new Games({
+    name: "FortNite",
+    genre: "battle royale",
+    rating: 8,
+})
+
