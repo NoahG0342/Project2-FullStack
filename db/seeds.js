@@ -22,3 +22,9 @@ const wow = new Games({
 
 })
 
+const bo4 = new Games({
+    name: "Black Ops 4",
+    genre: "first person shooter",
+    rating: 9,
+})
+
