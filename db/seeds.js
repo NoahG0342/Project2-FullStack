@@ -85,6 +85,8 @@ const epic = new Platform({
     Games: [fn, ut, rr]
 })
 
+User.create()
+
 Platform.remove({})
     .then(() => Games.insertMany([overWatch, wow, bo4, counterS, csgo, tf, fn, ut, rr]))
     .then(() => steam.save())
