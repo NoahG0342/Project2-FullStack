@@ -20,6 +20,7 @@
   "homepage": "https://github.com/NoahG0342/Project2-FullStack#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "hbs": "^4.0.1",
     "mongoose": "^5.3.7"
   },
   "devDependencies": {}

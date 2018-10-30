@@ -2,21 +2,22 @@ const express = require('express')
 const router = express.Router()
 const appController = require('../controllers/application')
 const platformsController = require('../controllers/platforms')
-const productsController = require('../controllers/products')
+const gamesController = require('../controllers/games')
 
 ///home page
 router.get('/', appController.index)
 
-///home page for stores
 router.get('/platforms', platformsController.index)
 
-///
+
 router.get('/platforms/new', platformsController.new)
 
-////individual stores
 router.get('/platforms/:platformsId', platformsController.show)
 
+router.get('/platforms/:platformsId/games', gamesController.index)
 
-
+router.get('/platforms/:platformsId/gamess/:gamesId', gamesController.show)
 
 module.exports = router
+
+

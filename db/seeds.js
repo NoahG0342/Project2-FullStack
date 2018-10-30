@@ -86,7 +86,9 @@ const epic = new Platform({
 })
 
 
-Platform.remove({})
+User.remove({})
+    .then(()=> Platform.remove({}))
+    .then(()=> Games.remove({}))
     .then(() => Games.insertMany([overWatch, wow, bo4, counterS, csgo, tf, fn, ut, rr]))
     .then(() => steam.save())
     .then(() => battleNet.save())

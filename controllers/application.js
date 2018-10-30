@@ -1,6 +1,6 @@
 const appController = {
     index: (req, res) => {
-        res.send("hey")
+        res.send("hey asdf;lkjas;ldkfj;aklsjdf")
     }
 }
 
