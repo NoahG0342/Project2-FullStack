@@ -7,8 +7,8 @@ const platformsController = require('../controllers/platforms')
 ///home page
 router.get('/', appController.index)
 
-///home page for stores
-//  router.get('/platforms', platformsController.index)
+///home page for Platforms
+router.get('/platforms', platformsController.index)
 
 
 module.exports = router
