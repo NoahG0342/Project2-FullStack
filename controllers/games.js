@@ -32,6 +32,14 @@ const gamesController = {
         Games.findByIdAndRemove(req.params.gamesId).then(() => {
             res.redirect(`/platforms/${req.params.platformsId}`)
         })
+    },
+
+    create: (req, res) => {
+        Games.create(req.body).then((newGame) => {
+            newGame.save()
+            console.log(req.body)
+            res.redirect(`/platforms/${req.params.platformsId}`)
+        })
     }
     // show: (req, res) =>{
     //     const gameId = req.params.gamesId

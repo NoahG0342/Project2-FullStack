@@ -12,8 +12,25 @@
         <form action="/platforms/{{../platform._id}}/games/{{id}}?_method=DELETE" method="POST">
             <button type="submit">DELETE</button>
         </form>
+
+       
     </div>
 </div>
 
 
 {{/each}}
+
+<form action="/platforms/{{platform._id}}/games/{{id}}" method="POST">
+<label for="name">
+
+<input type="text" name="game">
+
+</label>
+
+<label for="price">
+
+<input type="text" name="price">
+
+</label>
+<button>create</button>
+</form>

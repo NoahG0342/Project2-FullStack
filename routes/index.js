@@ -20,6 +20,8 @@ router.get('/platforms/:platformsId/games/:gamesId', gamesController.show)
 
 router.delete('/platforms/:platformsId/games/:gamesId', gamesController.delete)
 
+router.post('/platforms/:platformsId/games', gamesController.create)
+
 module.exports = router
 
 
