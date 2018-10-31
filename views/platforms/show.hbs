@@ -1,0 +1,15 @@
+<h1>welcome to your {{platform.name}} </h1>
+<h2>These are the top 3 games</h2>
+{{#each platform.games}}
+<div class="card" style="width: 18rem;">
+ 
+ <div class="card-body">
+<h5 class="card-title">{{name}}</h5>
+<p class="card-text">Price: $59.99 {{price}}</p>
+   
+   <a href="/platforms/{{../platform._id}}/games/{{_id}}" class="btn btn-primary">Go to </a>
+ </div>
+</div>
+
+
+{{/each}}

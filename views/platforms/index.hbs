@@ -1,3 +1,13 @@
-<h1>hello from platform index page</h1>
+<h1>The 3 top platforms for pc gaming</h1>
+{{#each platforms}}
+<div class="card" style="width: 18rem;">
+ 
+ <div class="card-body">
+<h5 class="card-title">{{name}}</h5>
+   
+   <a href="/platforms/{{_id}}" class="btn btn-primary">visit platform games</a>
+ </div>
+</div>
 
-{{platforms}}
+
+{{/each}}

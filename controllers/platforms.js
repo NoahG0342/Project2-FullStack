@@ -1,4 +1,5 @@
 const Platform = require('../models/Platform')
+const Games = require('../models/Games')
 
 const platformsController = {
     index: (req, res) => {

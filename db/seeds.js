@@ -68,21 +68,21 @@ const steam = new Platform({
     name: "Steam",
     rating: 9,
     dateC: "September 12, 2003",
-    Games: [counterS, csgo, tf]
+    games: [counterS, csgo, tf]
 })
 
 const battleNet = new Platform({
     name: "Battle.net",
     rating: 8,
     dateC: " October 24, 2017",
-    Games: [overWatch, wow, bo4]
+    games: [overWatch, wow, bo4]
 })
 
 const epic = new Platform({
     name: "Epic Games",
     rating: 8,
     dateC: "1991",
-    Games: [fn, ut, rr]
+    games: [fn, ut, rr]
 })
 
 

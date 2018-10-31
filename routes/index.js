@@ -16,7 +16,7 @@ router.get('/platforms/:platformsId', platformsController.show)
 
 router.get('/platforms/:platformsId/games', gamesController.index)
 
-router.get('/platforms/:platformsId/gamess/:gamesId', gamesController.show)
+router.get('/platforms/:platformsId/games/:gamesId', gamesController.show)
 
 module.exports = router
 
