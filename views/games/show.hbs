@@ -1,11 +1,9 @@
-{{#each games}}
-
 <div class="card" style="width: 18rem;">
 
     <div class="card-body">
-        <h5 class="card-title">{{name}}</h5>
-        <p class="card-text">This product is priced at $ {{games.price}}</p>
+        <h5 class="card-title">{{games.name}}</h5>
+        <p class="card-text">Genre: {{games.genre}}</p>
+        <p class="card-text">Rating: {{games.rating}}</p>
         <a href="#" class="btn btn-primary">more info</a>
     </div>
 </div>
-{{/each}}

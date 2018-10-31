@@ -1,15 +1,21 @@
 <h1>welcome to your {{platform.name}} </h1>
+{{platform.rating}}
+{{platform.dateC}}
 <h2>These are the top 3 games</h2>
 {{#each platform.games}}
 <div class="card" style="width: 18rem;">
- 
- <div class="card-body">
-<h5 class="card-title">{{name}}</h5>
-<p class="card-text">Price: $59.99{{price}}</p>
-<p class="card-text">rating: {{rating}}</p>
-<p class="card-text"> genre: {{genre}}</p>
-   
- </div>
+
+    <div class="card-body">
+        <a href="/platforms/{{../platform._id}}/games/{{_id}}"><h5 class="card-title">{{name}}</h5></a>
+        <p class="card-text">Price: $59.99{{price}}</p>
+        <p class="card-text">rating: {{rating}}</p>
+        <p class="card-text"> genre: {{genre}}</p>
+
+
+        <form action="/platforms/{{../platform._id}}/games/{{id}}?_method=DELETE" method="POST">
+            <button type="submit">DELETE</button>
+        </form>
+    </div>
 </div>
 
 

@@ -12,13 +12,26 @@ const gamesController = {
             })
     },
     show: (req, res) => {
-        Games.findById(req.params.id).populate(`games`)
+        console.log(req.params)
+        Games.findById(req.params.gamesId).populate(`games`)
             .then((games) => {
                 res.render(
                     'games/show',
                     {games: games}
                 )
             })
+    },
+
+    update: (req, res) => {
+        Games.findByIdAndUpdate(req.params.id, req.body).then((update) => {
+            res.redirect(`/games/${update._id}`)
+        })
+    },
+    
+    delete: (req, res) => {
+        Games.findByIdAndRemove(req.params.gamesId).then(() => {
+            res.redirect(`/platforms/${req.params.platformsId}`)
+        })
     }
     // show: (req, res) =>{
     //     const gameId = req.params.gamesId

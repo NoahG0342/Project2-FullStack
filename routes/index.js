@@ -18,6 +18,8 @@ router.get('/platforms/:platformsId/games', gamesController.index)
 
 router.get('/platforms/:platformsId/games/:gamesId', gamesController.show)
 
+router.delete('/platforms/:platformsId/games/:gamesId', gamesController.delete)
+
 module.exports = router
 
 
