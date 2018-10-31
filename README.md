@@ -6,6 +6,9 @@ link to trello its garbage : https://trello.com/b/NAUruq4q/project-2
 
 ERD: ![ERD](images/bob.png)
 
+heroku: https://chilling-tomb-72752.herokuapp.com/platforms
 
-wirefram: 
+
+wirefram: in images folder
+
 
