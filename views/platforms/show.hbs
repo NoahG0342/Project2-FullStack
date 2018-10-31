@@ -8,9 +8,6 @@
     <div class="card-body">
         <a href="/platforms/{{../platform._id}}/games/{{_id}}"><h5 class="card-title">{{name}}</h5></a>
         <p class="card-text">Price: $59.99{{price}}</p>
-        <p class="card-text">rating: {{rating}}</p>
-        <p class="card-text"> genre: {{genre}}</p>
-
 
         <form action="/platforms/{{../platform._id}}/games/{{id}}?_method=DELETE" method="POST">
             <button type="submit">DELETE</button>
